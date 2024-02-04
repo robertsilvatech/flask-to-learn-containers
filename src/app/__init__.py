@@ -15,7 +15,8 @@ def create_app():
     @app.route('/')
     def home():
         color = os.getenv('COLOR')
-        return render_template('index.html', color=color)
+        version = os.getenv('VERSION')
+        return render_template('index.html', color=color, version=version)
     
 
     return app
