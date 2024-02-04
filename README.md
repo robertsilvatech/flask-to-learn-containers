@@ -25,8 +25,3 @@ docker container ls
 Exemplo: http://127.0.0.1:32770
 
 `Lembre-se de mudar a porta de acordo com seu ambiente`
-
-
-
-Está é uma aplicação simples que está sendo desenvolvida de acordo com os passos durante o aprendizado de Docker Kubernetes.
-A aplicação tem como objetivo facilitar o entendimento de alguns conceitos, demonstrando de forma visual.
