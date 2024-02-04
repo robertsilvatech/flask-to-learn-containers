@@ -16,7 +16,7 @@ spec:
         app: learncontainers
     spec:
       containers:
-      - image: robertsilvatech/flask-to-learn-containers:v1.0.0
+      - image: robertsilvatech/flask-to-learn-containers:v1.1.0
         name: flask-to-learn-containers
         ports:
           - containerPort: 5000
