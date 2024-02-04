@@ -13,10 +13,10 @@
 {% endif %}
     <h1>ROBERTSILVATECH TREINAMENTOS</h1>
     <h2>Aprenda Docker e Kubernetes</h2>
-    {% if version %}
-    <h3>Versão: {{ version }}</h3>
-    {% else %}
-    <h3>Versão: 1.0.0</h3>
+    <h3>Versão: {{ version }} </h3>
+    {% if chart_version %}
+    <h3>Helm Chart Version: {{ chart_version }}</h3>
     {% endif %}
+    
 </body>
 </html>

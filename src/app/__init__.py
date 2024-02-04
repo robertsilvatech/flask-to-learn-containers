@@ -4,6 +4,7 @@ from flask import render_template
 from flask import request
 import logging
 import logging.config
+from .settings import version as settings_version
 
 def create_app():
     app = Flask(__name__)
@@ -16,7 +17,10 @@ def create_app():
     def home():
         color = os.getenv('COLOR')
         version = os.getenv('VERSION')
-        return render_template('index.html', color=color, version=version)
+        if not version:
+            version = settings_version
+        chart_version = os.getenv('CHART_VERSION')
+        return render_template('index.html', color=color, version=version, chart_version=chart_version)
     
 
     return app

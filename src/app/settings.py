@@ -1,5 +1,6 @@
 import os
 
+version = "1.1.0"
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config(object):
