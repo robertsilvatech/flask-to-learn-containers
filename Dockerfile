@@ -1,7 +1,9 @@
 FROM python:3.10-slim
 
 ARG PROJECT_PATH=src
+ARG VERSION
 
+ENV VERSION=1.0.0
 ENV FLASK_ENV=development
 
 COPY ./${PROJECT_PATH}/requirements.txt /

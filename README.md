@@ -25,3 +25,7 @@ docker container ls
 Exemplo: http://127.0.0.1:32770
 
 `Lembre-se de mudar a porta de acordo com seu ambiente`
+
+- Variáveis disponíveis:
+  - COLOR = Muda o background
+  - VERSION = Muda a versão
