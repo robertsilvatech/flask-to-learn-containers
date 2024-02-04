@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: learncontainers
+  name: learncontainers
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: learncontainers
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: learncontainers
+    spec:
+      containers:
+      - image: robertsilvatech/flask-to-learn-containers:v1.0.0
+        name: flask-to-learn-containers
+        ports:
+          - containerPort: 5000
+        resources: {}
+
+status: {}
